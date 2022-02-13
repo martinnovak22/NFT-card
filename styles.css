@@ -1,0 +1,131 @@
+/*main css content*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.flexbox-container{
+    display:flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+/*card settings*/
+.card{
+    font-family: "Outfit", sans-serif;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    padding-top: 20px;
+}
+
+.nft-details{
+    width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*picture settings and animation for overlay*/
+.image{
+    position: relative;
+    width: 280px;
+}
+.nft-pic{
+    display:block;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(178, 100%, 50%,0.4);
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+
+
+
+/*nft info settings*/
+.info{
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+}
+
+h2{
+    color:white;
+    font-weight: 600;
+    margin-top:10px;
+    margin-bottom: 0px;
+}
+
+h2:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+p{
+    color:hsl(215, 51%, 70%);
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.currency{
+    font-weight: 400;
+    color: hsl(178, 100%, 50%);
+}
+
+.currency img, .time-left img
+{
+    vertical-align:bottom;
+}
+
+
+
+
+/*breaking line*/
+hr{
+    width: 280px;
+    border-color: hsl(215, 32%, 27%);
+}
+
+
+
+/*part of nft with creator*/
+.creator img{
+    max-height: 30px;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 30px;
+}
+
+.creator{
+    display:flex;
+    justify-content: left;
+    width: 280px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.creator span{
+    color: white;
+}
+
+.creator span:hover{
+    color: hsl(178, 100%, 50%);
+}
